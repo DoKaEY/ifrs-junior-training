@@ -75,6 +75,27 @@
     }
   });
 
+  // QR code rendering — encodes current page URL by default,
+  // or a `data-qr` override if set. Uses vendored qrcode-generator library.
+  document.querySelectorAll(".qr-code").forEach((el) => {
+    if (typeof qrcode !== "function") return;
+    const url = el.dataset.qr || window.location.href;
+    try {
+      const qr = qrcode(0, "M");
+      qr.addData(url);
+      qr.make();
+      el.innerHTML = qr.createSvgTag({ cellSize: 5, margin: 2, scalable: true });
+      const svg = el.querySelector("svg");
+      if (svg) {
+        svg.setAttribute("width", "180");
+        svg.setAttribute("height", "180");
+        svg.style.display = "block";
+      }
+    } catch (e) {
+      el.textContent = "QR could not be generated.";
+    }
+  });
+
   // Copy YouTube links button
   document.querySelectorAll("[data-copy-links]").forEach((btn) => {
     btn.addEventListener("click", async () => {
