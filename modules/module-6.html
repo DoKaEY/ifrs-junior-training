@@ -10,7 +10,7 @@
   <header class="site">
     <div class="inner">
       <h1><a href="../index.html" style="color:inherit; text-decoration:none">IFRS Junior Training</a></h1>
-      <span class="meta">Module 6 of 6 · Coming soon</span>
+      <span class="meta">Module 6 of 6</span>
     </div>
   </header>
 
@@ -21,8 +21,10 @@
     <p class="page-lead"><strong>Tikslas:</strong> gebėti perskaityti realią IFRS finansinę ataskaitą ir identifikuoti mokesčių konsultavimui svarbias vietas.</p>
 
     <div class="actions">
-      <button class="btn disabled" disabled>NotebookLM — coming soon</button>
-      <button class="btn" data-copy-links="https://youtube.com/watch?v=2CfB7vFiBRw|https://youtube.com/watch?v=4caFrcntTi8">
+      <a class="btn primary" href="https://notebooklm.google.com" target="_blank" rel="noopener" data-nblm>
+        Open NotebookLM for this module ↗
+      </a>
+      <button class="btn" data-copy-links="https://youtube.com/watch?v=_F6a0ddbjtI|https://youtube.com/watch?v=4caFrcntTi8">
         Copy YouTube links
       </button>
       <button class="btn primary" data-mark-complete="m6">Mark module complete</button>
@@ -31,12 +33,12 @@
     <h2>Recommended videos</h2>
     <div class="video-grid">
       <div class="video-card">
-        <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/2CfB7vFiBRw" title="The KEY to Understanding Financial Statements" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/_F6a0ddbjtI" title="The KEY to Understanding Financial Statements" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         <div class="meta"><p class="title">The KEY to Understanding Financial Statements</p><p class="sub">Accounting Stuff · ~10 min</p></div>
       </div>
       <div class="video-card">
-        <div class="frame" style="display:flex; align-items:center; justify-content:center; color:#888; font-size:13px; padding:40px; text-align:center; background:var(--surface-2)">
-          Edspira: How to Read a Balance Sheet<br/>(ieškoti tiesiogiai Edspira kanale)
+        <div class="frame" style="display:flex; align-items:center; justify-content:center; color:var(--text-muted); font-size:13px; padding:40px; text-align:center; background:var(--surface-2)">
+          Edspira: How to Read a Balance Sheet<br/><a href="https://www.youtube.com/@Edspira/search?query=how%20to%20read%20a%20balance%20sheet" target="_blank" rel="noopener">Search on Edspira channel ↗</a>
         </div>
         <div class="meta"><p class="title">How to Read a Balance Sheet</p><p class="sub">Edspira · ~15 min</p></div>
       </div>
@@ -66,15 +68,33 @@
     <div class="qa">
       <details>
         <summary>1. Kur finansinėse ataskaitose rasite informaciją apie pelno mokesčio skaičiavimo metodiką?</summary>
-        <div class="answer tbd">TBD — to be filled in.</div>
+        <div class="answer">
+          Trijose vietose: (1) <strong>P&amp;L pelno mokesčio eilutė</strong> (income tax expense) — vieno skaičiaus suma; (2) <strong>Balance sheet</strong> — current tax payable/receivable bei deferred tax assets/liabilities; (3) svarbiausia — <strong>aiškinamasis raštas (notes)</strong>: „Income tax" skiltis, kurioje pateikiama (a) <strong>tax reconciliation</strong> — kaip nominalus tarifas × apskaitinis pelnas tampa faktiniu mokesčiu (permanent / temporary differences detalizacija), (b) deferred tax movement table, (c) significant accounting policies — income tax skiltis su politikomis (recognition, measurement, uncertain tax positions), (d) jei taikoma — Pillar 2 atskleidimai pagal IAS 12 papildymą.
+        </div>
       </details>
       <details>
         <summary>2. Kas yra „significant accounting policies" ir kodėl jos svarbios mokesčių konsultantui?</summary>
-        <div class="answer tbd">TBD — to be filled in.</div>
+        <div class="answer">
+          „Significant accounting policies" — vadovybės pasirinkti apskaitos principai esminiems sandoriams: revenue recognition (point in time vs over time), depreciation method ir naudingo tarnavimo laikas, inventory valuation (FIFO/weighted average), provisions, financial instruments klasifikacija, lease accounting, impairment metodologija. Pagal IAS 1 atskleidžiamos aiškinamajame rašte.
+          <strong>Kodėl svarbu mokesčių konsultantui:</strong> (a) politikos pasirinkimas tiesiogiai veikia P&amp;L laiko atžvilgiu — tai keičia apskaitinį pelną kiekvieną periodą; (b) per IAS 12 finansinė bazė tampa atskaitos tašku DTA/DTL skaičiavimui; (c) Pillar 2 GloBE pajamos kyla iš IFRS apskaitos — politikos veikia ETR ir top-up tax riziką; (d) palyginamumas tarp grupės įmonių ar metų reikalauja suprasti, kur galimi politikos pakeitimai (IAS 8 — retrospective application).
+        </div>
       </details>
       <details>
         <summary>3. Jei matote didelį skirtumą tarp P&amp;L pelno mokesčio eilutės ir nominalaus mokesčio tarifo × pelnas — kokios priežastys galimos?</summary>
-        <div class="answer tbd">TBD — to be filled in.</div>
+        <div class="answer">
+          Skirtumas paaiškinamas <strong>tax reconciliation</strong> aiškinamajame rašte. Tipiniai elementai:
+          <ul>
+            <li><strong>Permanent differences</strong> — neatskaitomos sąnaudos (baudos, atstovavimo virš normos, tam tikros nepripažintos rezervinės sąnaudos), neapmokestinamos pajamos (gauti dividendai dažnai EU PSD).</li>
+            <li><strong>Skirtingi tarifai</strong> — užsienio dukterinių įmonių pelnas apmokestinamas kitoje jurisdikcijoje (mix of rates).</li>
+            <li><strong>Mokestinės lengvatos / kreditai</strong> — R&amp;D, investment incentives, free economic zones.</li>
+            <li><strong>DTA recognition / valuation allowance</strong> — neatpažinti perkeliamų nuostolių DTA arba ankstesnių periodų DTA „atstatymas".</li>
+            <li><strong>Tax rate change effect</strong> — egzistuojančių DTA/DTL perskaičiavimas dėl tarifo pasikeitimo (vienkartinis P&amp;L poveikis).</li>
+            <li><strong>Praeities periodų korekcijos</strong> — tikslinimai dėl ankstesnių metų deklaracijų užbaigimo / mokestinių patikrų.</li>
+            <li><strong>Pillar 2 top-up</strong> — papildomas mokestis, jei jurisdikcijos ETR &lt; 15 %.</li>
+            <li><strong>Withholding taxes</strong> ant tarpįmoninių pervedimų, neatgaunami kreditai.</li>
+          </ul>
+          Konsultantui šis reconciliation — pirmoji vieta ieškant struktūrinio planavimo galimybių ar rizikų.
+        </div>
       </details>
     </div>
 

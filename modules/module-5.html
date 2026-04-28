@@ -10,7 +10,7 @@
   <header class="site">
     <div class="inner">
       <h1><a href="../index.html" style="color:inherit; text-decoration:none">IFRS Junior Training</a></h1>
-      <span class="meta">Module 5 of 6 · Coming soon</span>
+      <span class="meta">Module 5 of 6</span>
     </div>
   </header>
 
@@ -21,7 +21,9 @@
     <p class="page-lead"><strong>Tikslas:</strong> suprasti skirtumą tarp einamojo ir atidėtojo pelno mokesčio, temporary differences koncepciją.</p>
 
     <div class="actions">
-      <button class="btn disabled" disabled>NotebookLM — coming soon</button>
+      <a class="btn primary" href="https://notebooklm.google.com" target="_blank" rel="noopener" data-nblm>
+        Open NotebookLM for this module ↗
+      </a>
       <button class="btn" data-copy-links="https://youtube.com/watch?v=_hodq8jZZ-w|https://youtube.com/watch?v=wPIC21GDjGY|https://youtube.com/watch?v=m0WPbOLnKjU">
         Copy YouTube links
       </button>
@@ -79,15 +81,27 @@
     <div class="qa">
       <details>
         <summary>1. Įranga nupirkta už 100 000 EUR. Buhalterinis nusidėvėjimas 20 000 EUR/metus, mokestinis 25 000 EUR/metus. Po 1 metų: kokia carrying amount? Kokia tax base? DTA ar DTL?</summary>
-        <div class="answer tbd">TBD — to be filled in.</div>
+        <div class="answer">
+          <strong>Carrying amount</strong> = 100 000 − 20 000 = <strong>80 000 EUR</strong>.
+          <strong>Tax base</strong> = 100 000 − 25 000 = <strong>75 000 EUR</strong> (suma, kurią dar bus galima atskaityti mokesčiams ateityje).
+          CA (80 000) &gt; TB (75 000) → <strong>taxable temporary difference 5 000 EUR</strong> → <strong>DTL = 5 000 × tax rate</strong> (pvz., taikant 15 % LT tarifą — 750 EUR).
+          Logika: greitesnis mokestinis nusidėvėjimas mokesčius sumažino dabar, bet ateityje, kai apskaitinis nusidėvėjimas „pasivys", apmokestinama suma bus didesnė — todėl įmonė skolinga mokesčius ateičiai (DTL).
+        </div>
       </details>
       <details>
         <summary>2. Įmonė pripažino 50 000 EUR garantinį atidėjinį. Mokesčiams atskaityti galima tik sumokėjus. Kokia tax base? DTA ar DTL?</summary>
-        <div class="answer tbd">TBD — to be filled in.</div>
+        <div class="answer">
+          Įsipareigojimo <strong>carrying amount = 50 000 EUR</strong>. <strong>Tax base = CA − suma, kurią bus galima atskaityti ateityje = 50 000 − 50 000 = 0</strong>.
+          Įsipareigojimui: kai CA &gt; TB → <strong>deductible temporary difference 50 000 EUR</strong> → <strong>DTA = 50 000 × tax rate</strong> (pvz., 15 % → 7 500 EUR).
+          Logika: provision sumažino apskaitinį pelną dabar, bet mokesčių atskaita atsiras tik tada, kai įmonė realiai sumokės garantines išlaidas — taigi būsima mokestinė nauda (turtas). DTA pripažįstama tik jei tikėtina, kad ateityje bus pakankamai apmokestinamojo pelno (recoverability test).
+        </div>
       </details>
       <details>
         <summary>3. Kodėl teisininkai turi suprasti atidėtąjį pelno mokestį?</summary>
-        <div class="answer tbd">TBD — to be filled in. (Hint: Pillar 2 QDMTT/IIR skaičiavimai remiasi IFRS finansine apskaita, atidėtasis mokestis tiesiogiai veikia ETR.)</div>
+        <div class="answer">
+          <strong>Pillar 2 (GloBE) tiesioginė sąsaja.</strong> 15 % minimalaus mokesčio skaičiavimas (QDMTT, IIR, UTPR) remiasi IFRS finansine apskaita, ne lokalia mokestine deklaracija. <strong>Effective Tax Rate (ETR)</strong> jurisdikcijoje skaičiuojama kaip (current tax + deferred tax) ÷ GloBE income. Atidėtasis mokestis čia veikia kaip „lygiklis" — jis sumažina ETR svyravimus tarp metų ir užkerta kelią dirbtiniam top-up tax suaktyvinimui dėl laikinųjų skirtumų.
+          Praktinės situacijos, kur tai svarbu: M&amp;A struktūrizavimas (acquired DTAs/DTLs), restruktūrizacijos, tax holidays vertinimas, transfer pricing korekcijos, GloBE Information Return (GIR) parengimas. Teisininkas, nesuprantantis DTA/DTL mechanikos, negali tinkamai prognozuoti efektyvaus grupės mokesčių krūvio ar identifikuoti rizikų klientų konsolidacijoje.
+        </div>
       </details>
     </div>
 

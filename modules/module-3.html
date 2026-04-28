@@ -10,7 +10,7 @@
   <header class="site">
     <div class="inner">
       <h1><a href="../index.html" style="color:inherit; text-decoration:none">IFRS Junior Training</a></h1>
-      <span class="meta">Module 3 of 6 · Coming soon</span>
+      <span class="meta">Module 3 of 6</span>
     </div>
   </header>
 
@@ -21,8 +21,10 @@
     <p class="page-lead"><strong>Tikslas:</strong> suprasti ilgalaikio / trumpalaikio turto skirstymą, IAS 16 pagrindus ir nusidėvėjimo metodus.</p>
 
     <div class="actions">
-      <button class="btn disabled" disabled>NotebookLM — coming soon</button>
-      <button class="btn" data-copy-links="https://youtube.com/watch?v=xsBkC7JVcL0|https://youtube.com/watch?v=bvUGroHmeYk|https://youtube.com/watch?v=bm3z7M0bKyI|https://youtube.com/watch?v=4caFrcntTi8">
+      <a class="btn primary" href="https://notebooklm.google.com" target="_blank" rel="noopener" data-nblm>
+        Open NotebookLM for this module ↗
+      </a>
+      <button class="btn" data-copy-links="https://youtube.com/watch?v=rOsuqG_J0t4|https://youtube.com/watch?v=_pas1ETbrj8|https://youtube.com/watch?v=iruD9KTNnNc|https://youtube.com/watch?v=4caFrcntTi8">
         Copy YouTube links
       </button>
       <button class="btn primary" data-mark-complete="m3">Mark module complete</button>
@@ -31,15 +33,15 @@
     <h2>Recommended videos</h2>
     <div class="video-grid">
       <div class="video-card">
-        <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/xsBkC7JVcL0" title="What are Assets?" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/rOsuqG_J0t4" title="What are Assets?" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         <div class="meta"><p class="title">What are Assets? (Let's Break Them Down)</p><p class="sub">Accounting Stuff · ~10 min</p></div>
       </div>
       <div class="video-card">
-        <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/bvUGroHmeYk" title="Depreciation Basics! With Journal Entries" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/_pas1ETbrj8" title="Depreciation Basics! With Journal Entries" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         <div class="meta"><p class="title">Depreciation Basics! With Journal Entries</p><p class="sub">Accounting Stuff · ~12 min</p></div>
       </div>
       <div class="video-card">
-        <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/bm3z7M0bKyI" title="Straight Line Method of Depreciation in 3 Steps" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/iruD9KTNnNc" title="Straight Line Method of Depreciation in 3 Steps" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         <div class="meta"><p class="title">Straight Line Method of Depreciation in 3 Steps</p><p class="sub">Accounting Stuff · ~8 min</p></div>
       </div>
       <div class="video-card">
@@ -64,15 +66,22 @@
     <div class="qa">
       <details>
         <summary>1. Įmonė nupirko mašiną už 50 000 EUR, naudingo tarnavimo laikas 5 metai, likutinė vertė 5 000 EUR. Koks metinis nusidėvėjimas taikant straight-line?</summary>
-        <div class="answer tbd">TBD — to be filled in.</div>
+        <div class="answer">
+          <strong>9 000 EUR/metus.</strong> Formulė: (cost − residual value) ÷ useful life = (50 000 − 5 000) ÷ 5 = 9 000. Po 5 metų accumulated depreciation = 45 000, carrying amount = 5 000 (lygus likutinei vertei — žemiau jos nebenusidėvi).
+        </div>
       </details>
       <details>
         <summary>2. Įmonė patyrė 3 000 EUR remonto išlaidas ir 15 000 EUR rekonstravimo išlaidas. Kas kapitalizuojama?</summary>
-        <div class="answer tbd">TBD — to be filled in.</div>
+        <div class="answer">
+          <strong>Kapitalizuojama tik 15 000 EUR rekonstrukcija</strong> (pridedama prie PPE carrying amount, vėliau nusidėvi). 3 000 EUR remontas — einamoji P&amp;L sąnauda. IAS 16 reikalauja kapitalizuoti tik tas vėlesnes išlaidas, kurios atitinka turto pripažinimo kriterijus: tikėtina papildoma ekonominė nauda (prailginamas naudingo tarnavimo laikas, padidinamas pajėgumas / efektyvumas) ir patikimas matavimas. Įprastas remontas (day-to-day servicing) tik palaiko esamą būklę — tai OPEX.
+        </div>
       </details>
       <details>
         <summary>3. Kuo skiriasi depreciation nuo impairment?</summary>
-        <div class="answer tbd">TBD — to be filled in.</div>
+        <div class="answer">
+          <strong>Depreciation</strong> — sistemingas, prognozuojamas turto savikainos paskirstymas per naudingo tarnavimo laiką (IAS 16). Vyksta kiekvieną periodą tolygiai ar pagal pasirinktą metodą, neatsižvelgiant į rinkos pokyčius.
+          <strong>Impairment</strong> — vienkartinis vertės netekimas, kai recoverable amount (didesnė iš fair value − costs to sell ir value in use) tampa mažesnė už carrying amount (IAS 36). Triggers: rinkos kritimas, fizinis pažeidimas, technologinis pasenimas. Impairment loss iš karto pripažįstamas P&amp;L (arba per OCI, jei turtas perkainotas).
+        </div>
       </details>
     </div>
 
