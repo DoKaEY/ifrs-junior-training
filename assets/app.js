@@ -87,8 +87,8 @@
       el.innerHTML = qr.createSvgTag({ cellSize: 5, margin: 2, scalable: true });
       const svg = el.querySelector("svg");
       if (svg) {
-        svg.setAttribute("width", "180");
-        svg.setAttribute("height", "180");
+        svg.setAttribute("width", "110");
+        svg.setAttribute("height", "110");
         svg.style.display = "block";
       }
     } catch (e) {

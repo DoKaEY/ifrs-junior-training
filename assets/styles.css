@@ -263,58 +263,86 @@ h3 { font-size: 16px; margin: 24px 0 8px; }
   font-size: 12px;
 }
 
-/* Mobile NotebookLM how-to with QR */
+/* Mobile NotebookLM how-to (compact, with collapsible details) */
 .mobile-howto {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 22px 24px;
-  margin: 8px 0 32px;
+  padding: 14px 18px;
+  margin: 8px 0 24px;
+}
+.mh-summary {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  align-items: start;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  align-items: center;
 }
-@media (min-width: 720px) {
-  .mobile-howto { grid-template-columns: 1fr 200px; }
+.mh-text h3 {
+  margin: 0 0 4px;
+  font-size: 15px;
+  font-weight: 600;
 }
-.mobile-howto h3 {
-  margin: 0 0 8px;
-  font-size: 17px;
-}
-.mobile-howto .why {
-  background: var(--surface-2);
-  border-left: 3px solid var(--accent);
-  padding: 10px 14px;
-  border-radius: 4px;
-  margin: 12px 0;
-  font-size: 14px;
-}
-.mobile-howto .why strong { color: var(--text); }
-.mobile-howto .why ul { margin: 6px 0 0 16px; padding: 0; }
-.mobile-howto .why li { margin: 3px 0; }
-.mobile-howto ol { margin: 8px 0 0 18px; padding: 0; font-size: 14.5px; }
-.mobile-howto ol li { margin: 5px 0; }
-.mobile-howto .tip {
-  margin-top: 12px;
+.mh-text .mh-bullets {
+  margin: 0;
   font-size: 13px;
   color: var(--text-muted);
-  font-style: italic;
 }
 .mobile-howto .qr-wrap {
   text-align: center;
   background: white;
   border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 12px;
-  align-self: start;
+  border-radius: 6px;
+  padding: 6px;
+  align-self: center;
 }
-.mobile-howto .qr-wrap .qr-code { display: inline-block; }
+.mobile-howto .qr-wrap .qr-code { display: inline-block; line-height: 0; }
 .mobile-howto .qr-wrap .qr-label {
-  margin-top: 8px;
-  font-size: 12px;
+  margin-top: 4px;
+  font-size: 10px;
   color: #555;
   font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.mh-details {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--border);
+}
+.mh-details > summary {
+  cursor: pointer;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--accent);
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 0;
+}
+.mh-details > summary::-webkit-details-marker { display: none; }
+.mh-details > summary::before {
+  content: "▸";
+  transition: transform .15s ease;
+}
+.mh-details[open] > summary::before { transform: rotate(90deg); }
+.mh-details .why {
+  background: var(--surface-2);
+  border-left: 3px solid var(--accent);
+  padding: 10px 14px;
+  border-radius: 4px;
+  margin: 12px 0;
+  font-size: 13.5px;
+}
+.mh-details .why strong { color: var(--text); }
+.mh-details .why ul { margin: 6px 0 0 16px; padding: 0; }
+.mh-details .why li { margin: 3px 0; }
+.mh-details ol { margin: 8px 0 0 18px; padding: 0; font-size: 13.5px; }
+.mh-details ol li { margin: 4px 0; }
+.mh-details .tip {
+  margin-top: 10px;
+  font-size: 12.5px;
+  color: var(--text-muted);
+  font-style: italic;
 }
 
 /* Concepts list */
